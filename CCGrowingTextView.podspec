@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/ziryanov/CCGrowingTextView"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "Ivan Ziryanov" => "ivan.ziryanov@gmail.com" }
-  s.source       = { :git => "https://github.com/ziryanov/CCGrowingTextView.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/kaojohnny/CCGrowingTextView.git", :tag => s.version.to_s }
   s.platform     = :ios, '6.0'
   s.source_files = 'Classes', 'Classes/**/*.{h,m}'
   s.requires_arc = true
