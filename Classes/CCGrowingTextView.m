@@ -198,4 +198,14 @@
     return _placeholderLabel.text;
 }
 
+- (BOOL)canPerformAction:(SEL)action withSender:(id)sender
+{
+    if (self.canPerformdelegate && [self.canPerformdelegate respondsToSelector:@selector(canTextViewPerformAction:withSender:)]) {
+        if ([self.canPerformdelegate canTextViewPerformAction:action withSender:sender] == NO) {
+            return NO;
+        }
+    }
+    return [super canPerformAction:action withSender:sender];
+}
+
 @end
